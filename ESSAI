@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+ <head>
+    
+    <meta charset="UTF-8">
+    
+    
+    <!-- SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>سكون القلب - جميع قراء القرآن الكريم في مكان واحد</title>
+    <meta name="description" content="استمع إلى القرآن الكريم بصوت جميع القراء في مكان واحد. موقع يجمع أشهر القراء من مختلف أنحاء العالم مع إمكانية البحث السريع والاستماع المباشر">
+    <meta name="keywords" content="
+        قراء القرآن,
+        القرآن الكريم,
+        تلاوات,
+        مصحف,
+        قران اون لاين,
+        استماع القران,
+        مشاري العفاسي,
+        عبد الباسط عبد الصمد,
+        سعد الغامدي,
+        ماهر المعيقلي,
+        محمود خليل الحصري,
+        عبد الرحمن السديس,
+        سعود الشريم,
+        احمد العجمي,
+        مصحف مرتل,
+        قراء المسجد الحرام,
+        قراء المسجد النبوي
+    ">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="سكون القلب - جميع قراء القرآن الكريم في مكان واحد">
+    <meta property="og:description" content="استمع إلى القرآن الكريم بصوت جميع القراء في مكان واحد. موقع يجمع أشهر القراء من مختلف أنحاء العالم">
+    <meta property="og:image" content="https://wa-dakkir.web.app/images/logo-wadakir1.png">
+    <meta property="og:url" content="https://wa-dakkir.web.app/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="سكون القلب - جميع قراء القرآن الكريم">
+    <meta name="twitter:description" content="استمع إلى القرآن الكريم بصوت جميع القراء في مكان واحد">
+    <meta name="twitter:image" content="https://wa-dakkir.web.app/images/logo-wadakir1.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-wadakir1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-wadakir1.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo-wadakir1.png">
+    <link rel="stylesheet" href="style.css?v=1.0.3">
+    <!-- Ajouter dans le <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wa-dakkir.web.app/">
+    
+    <!-- Autres meta tags existants -->
+    <meta name="google-site-verification" content="2kcrkT4DH8u4I6zmDcVYMTdXUJ8UopMWl6ae5OVO4Ew">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+<style>
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .rotating {
+        animation: rotate 4s linear infinite;
+    }
+
+    .play-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .play-button:hover {
+        opacity: 0.9;
+    }
+</style><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-FB4TJEGSZ6" async=""></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo-wadakir.png" alt="Logo" class="logo logo1">
+        <img src="images/logo-wadakir.png" alt="Logo" class="logo logo2">
+        <h1>سكون القلب</h1>
+        <p class="subtitle">لحظات من الصفاء مع كل تلاوة ومعنى</p>
+        <p class="all-reciters">جميع القراء في مكان واحد</p>
+        <div class="categories-filter" style="display: none;">
+            
+            <button class="filter-btn" data-category="all">الكل</button>
+            <button class="filter-btn" data-category="عقيدة">العقيدة</button>
+            <button class="filter-btn" data-category="فقه">الفقه</button>
+            <button class="filter-btn" data-category="تزكية">التزكية</button>
+            <button class="filter-btn" data-category="فكر">الفكر</button>
+            
+        </div>
+        <div class="theme-switch-wrapper" style="display: none;">
+            <label class="theme-switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </span>
+            </label>
+        </div>
+        <div class="battery-status">
+            <span class="battery-icon" style="color: rgb(0, 200, 81);"><i class="fas fa-battery-full"></i></span>
+            <span class="battery-level" style="color: rgb(0, 200, 81);">87%</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="quran-section">
+            
+            <h2>
+                اختر السورة والقارئ
+                <img src="images/quran.png" alt="Quran Icon" class="quran-icon" id="quranIcon" style="display: none;">
+            </h2>
+            <div class="select-wrapper">
+                <div class="search-container">
+                    <input type="text" id="searchReciter" placeholder="ابحث عن القارئ..." class="search-input">
+                </div>
+            </div>
+            <div class="quran-controls">
+                <div class="select-wrapper">
+                    
+                    <label for="chooseReciter">اختر القارئ</label>
+                    <select id="chooseReciter" class="quran-select"><option value="">اختر القارئ</option><option value="1">إبراهيم الأخضر</option><option value="10">أكرم العلاقمي</option><option value="100">ماجد العنزي</option><option value="101">مالك شيبة الحمد</option><option value="102">ماهر المعيقلي</option><option value="104">محمد الأيراوي</option><option value="105">محمد البراك</option><option value="106">محمد الطبلاوي</option><option value="107">محمد اللحيدان</option><option value="108">محمد المحيسني</option><option value="109">محمد أيوب</option><option value="11">الحسيني العزازي</option><option value="110">محمد صالح عالم شاه</option><option value="111">محمد جبريل</option><option value="112">محمد صديق المنشاوي</option><option value="115">محمد عبدالكريم</option><option value="116">محمد عبدالحكيم سعيد العبدالله</option><option value="118">محمود خليل الحصري</option><option value="12">إدريس أبكر</option><option value="121">محمود علي البنا</option><option value="123">مشاري العفاسي</option><option value="125">مصطفى إسماعيل</option><option value="126">مصطفى اللاهوني</option><option value="127">مصطفى رعد العزاوي</option><option value="128">معمر الأندونيسي</option><option value="129">مفتاح السلطني</option><option value="13">الزين محمد أحمد</option><option value="134">محمد سايد</option><option value="135">عبدالرحمن السويّد</option><option value="136">عبدالإله بن عون</option><option value="137">أحمد طالب بن حميد</option><option value="138">نورين محمد صديق</option><option value="139">ماجد الزامل</option><option value="14">القارئ ياسين</option><option value="149">ماهر شخاشيرو</option><option value="15">العشري عمران</option><option value="150">محمد المنشد</option><option value="151">محمود الشيمي</option><option value="152">ياسر سلامة</option><option value="153">أخيل عبدالحي روا</option><option value="154">أستاذ زامري</option><option value="159">خالد المهنا</option><option value="16">العيون الكوشي</option><option value="160">عادل الكلباني</option><option value="161">موسى بلال</option><option value="162">حسين آل الشيخ</option><option value="163">حاتم فريد الواعر</option><option value="164">إبراهيم الجرمي</option><option value="165">محمود الرفاعي</option><option value="166">ناصر العبيد</option><option value="167">واصل المذن</option><option value="17">توفيق الصايغ</option><option value="178">إبراهيم الدوسري</option><option value="18">جمال شاكر عبدالله</option><option value="181">جمعان العصيمي</option><option value="183">رضية عبدالرحمن</option><option value="184">رقية سولونق</option><option value="185">سابينة مامات</option><option value="187">سيدين عبدالرحمن</option><option value="188">عبدالغني عبدالله</option><option value="189">عبدالله فهمي</option><option value="19">حمد الدغريري</option><option value="190">محمد الحافظ</option><option value="191">محمد حفص علي</option><option value="192">محمد خير النور</option><option value="193">يوسف بن نوح أحمد</option><option value="194">جمال الدين الزيلعي</option><option value="197">معيض الحارثي</option><option value="198">محمد رشاد الشريف</option><option value="2">إبراهيم الجبرين</option><option value="20">خالد الجليل</option><option value="201">أحمد الطرابلسي</option><option value="202">عبدالله الكندري</option><option value="203">أحمد عامر</option><option value="204">إبراهيم السعدان</option><option value="205">أحمد الحذيفي</option><option value="206">محمد عثمان خان</option><option value="207">يوسف الدغوش</option><option value="208">الدوكالي محمد العالم</option><option value="209">وشيار حيدر اربيلي</option><option value="21">خالد القحطاني</option><option value="211">الفاتح محمد الزبير</option><option value="21181">محمد برهجي</option><option value="21182">يوسف العيدروس</option><option value="21183">حسن الدغريري</option><option value="21184">محمد الفقيه</option><option value="21185">أحمد البشر</option><option value="212">طارق عبدالغني دعوب</option><option value="216">عثمان الأنصاري</option><option value="217">بندر بليله</option><option value="218">خالد الشريمي</option><option value="219">وديع اليمني</option><option value="22">خالد عبدالكافي</option><option value="221">رعد محمد الكردي</option><option value="225">عبدالرحمن العوسي</option><option value="226">خالد الغامدي</option><option value="227">رمضان شكور</option><option value="228">عبدالمجيد الأركاني</option><option value="229">محمد خليل القارئ</option><option value="23">خالد الوهيبي</option><option value="230">رامي الدعيس</option><option value="231">هزاع البلوشي</option><option value="236">عبدالرحمن الماجد</option><option value="237">مروان العكري</option><option value="24">خليفة الطنيجي</option><option value="240">سلمان العتيبي</option><option value="241">محمد رفعت</option><option value="243">عبدالله الموسى</option><option value="244">عبدالله الخلف</option><option value="245">منصور السالمي</option><option value="246">صلاح مصلي</option><option value="247">خالد الشارخ</option><option value="248">ناصر العصفور</option><option value="25">داود حمزة</option><option value="250">محمد البخيت</option><option value="251">ناصر الماجد</option><option value="252">أحمد السويلم</option><option value="253">إسلام صبحي</option><option value="254">بدر التركي</option><option value="255">هيثم الجدعاني</option><option value="256">أحمد خليل شاهين</option><option value="257">سعد المقرن</option><option value="259">أحمد النفيس</option><option value="26">رشيد إفراد</option><option value="260">عمر الدريويز</option><option value="263">عبدالعزيز العسيري</option><option value="264">يونس اسويلص</option><option value="265">أحمد ديبان</option><option value="267">عبدالله كامل</option><option value="268">بيشه وا قادر الكردي</option><option value="27">رشيد بلعالية</option><option value="271">نذير المالكي</option><option value="272">عكاشة كميني</option><option value="273">هيثم الدخين</option><option value="274">محمد أبو سنينة</option><option value="275">محمد الأمين قنيوة</option><option value="277">محمود عبدالحكم</option><option value="278">أحمد عيسى المعصراوي</option><option value="279">إبراهيم كشيدان</option><option value="28">زكريا حمامة</option><option value="280">هاشم أبو دلال</option><option value="281">فؤاد الخامري</option><option value="282">سيد أحمد هاشمي</option><option value="283">خالد كريم محمدي</option><option value="284">مال الله عبدالرحمن الجابر</option><option value="285">سلمان الصديق</option><option value="286">حسن صالح</option><option value="287">عبدالرحمن الشحات</option><option value="288">عيسى عمر سناكو</option><option value="289">هارون بقائي</option><option value="29">عبدالله بخاري</option><option value="290">صالح القريشي</option><option value="3">إبراهيم العسيري</option><option value="30">سعد الغامدي</option><option value="300">صالح الشمراني</option><option value="301">فيصل الهاجري</option><option value="302">أنس العمادي</option><option value="303">عبدالملك العسكر</option><option value="304">عبدالكريم الحازمي</option><option value="305">هشام الهراز</option><option value="306">عبدالله المشعل</option><option value="307">عبدالعزيز سحيم</option><option value="31">سعود الشريم</option><option value="32">سهل ياسين</option><option value="33">زكي داغستاني</option><option value="34">سامي الحسن</option><option value="35">سامي الدوسري</option><option value="36">سيد رمضان</option><option value="37">شعبان الصياد</option><option value="38">شيرزاد عبدالرحمن طاهر</option><option value="39">صابر عبدالحكم</option><option value="4">شيخ أبو بكر الشاطري</option><option value="40">صالح الصاهود</option><option value="41">صالح آل طالب</option><option value="42">صالح الهبدان</option><option value="43">صلاح البدير</option><option value="44">صلاح الهاشم</option><option value="46">صلاح بو خاطر</option><option value="47">مختار الحاج</option><option value="48">عادل ريان</option><option value="49">عبدالبارئ الثبيتي</option><option value="5">أحمد بن علي العجمي</option><option value="50">عبدالبارئ محمد</option><option value="51">عبدالباسط عبدالصمد</option><option value="54">عبدالرحمن السديس</option><option value="55">عبدالعزيز الأحمد</option><option value="56">عبدالعزيز الزهراني</option><option value="57">عبدالله البريمي</option><option value="58">عبدالله البعيجان</option><option value="59">عبدالله المطرود</option><option value="6">أحمد الحواشي</option><option value="60">عبدالله بصفر</option><option value="61">عبدالله خياط</option><option value="62">عبدالله عواد الجهني</option><option value="63">عبدالله غيلان</option><option value="64">عبدالرشيد صوفي</option><option value="66">عبدالمحسن الحارثي</option><option value="67">عبدالمحسن القاسم</option><option value="68">عبدالمحسن العسكر</option><option value="69">عبدالمحسن العبيكان</option><option value="7">أحمد سعود</option><option value="70">عبدالهادي أحمد كناكري</option><option value="71">عبدالودود حنيف</option><option value="72">عبدالولي الأركاني</option><option value="73">علي أبو هاشم</option><option value="74">علي بن عبدالرحمن الحذيفي</option><option value="76">علي جابر</option><option value="77">علي حجاج السويسي</option><option value="78">عماد زهير حافظ</option><option value="79">عبدالعزيز التركي</option><option value="8">أحمد صابر</option><option value="80">عمر القزابري</option><option value="81">فارس عباد</option><option value="82">فهد العتيبي</option><option value="83">فهد الكندري</option><option value="84">فواز الكعبي</option><option value="85">لافي العوني</option><option value="86">ناصر القطامي</option><option value="87">نبيل الرفاعي</option><option value="88">نعمة الحسان</option><option value="89">هاني الرفاعي</option><option value="9">أحمد نعينع</option><option value="90">وليد الدليمي</option><option value="91">وليد النائحي</option><option value="92">ياسر الدوسري</option><option value="93">ياسر القرشي</option><option value="94">ياسر الفيلكاوي</option><option value="95">ياسر المزروعي </option><option value="96">يحيى حوا</option><option value="97">يوسف الشويعي</option><option value="98">عبدالله عبدل</option></select>
+                </div>
+                <div class="select-wrapper">
+                    <label for="chooseMoshaf">اختر الرواية</label>
+                    <select id="chooseMoshaf" class="quran-select"><option value="">اختر المصحف</option>
+                <option value="1" data-server="https://server6.mp3quran.net/akdr/" data-surahlist="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114">
+                    حفص عن عاصم - مرتل
+                </option></select>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="chooseSurah">اختر السورة</label>
+                    <select id="chooseSurah" class="quran-select"><option value="">اختر السورة</option>
+                    <option value="https://server6.mp3quran.net/akdr/001.mp3">
+                        الفاتحة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/002.mp3">
+                        البقرة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/003.mp3">
+                        آل عمران
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/004.mp3">
+                        النساء
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/005.mp3">
+                        المائدة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/006.mp3">
+                        الأنعام
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/007.mp3">
+                        الأعراف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/008.mp3">
+                        الأنفال
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/009.mp3">
+                        التوبة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/010.mp3">
+                        يونس
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/011.mp3">
+                        هود
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/012.mp3">
+                        يوسف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/013.mp3">
+                        الرعد
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/014.mp3">
+                        إبراهيم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/015.mp3">
+                        الحجر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/016.mp3">
+                        النحل
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/017.mp3">
+                        الإسراء
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/018.mp3">
+                        الكهف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/019.mp3">
+                        مريم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/020.mp3">
+                        طه
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/021.mp3">
+                        الأنبياء
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/022.mp3">
+                        الحج
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/023.mp3">
+                        المؤمنون
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/024.mp3">
+                        النور
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/025.mp3">
+                        الفرقان
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/026.mp3">
+                        الشعراء
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/027.mp3">
+                        النمل
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/028.mp3">
+                        القصص
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/029.mp3">
+                        العنكبوت
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/030.mp3">
+                        الروم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/031.mp3">
+                        لقمان
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/032.mp3">
+                        السجدة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/033.mp3">
+                        الأحزاب
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/034.mp3">
+                        سبأ
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/035.mp3">
+                        فاطر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/036.mp3">
+                        يس
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/037.mp3">
+                        الصافات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/038.mp3">
+                        ص
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/039.mp3">
+                        الزمر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/040.mp3">
+                        غافر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/041.mp3">
+                        فصلت
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/042.mp3">
+                        الشورى
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/043.mp3">
+                        الزخرف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/044.mp3">
+                        الدّخان
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/045.mp3">
+                        الجاثية
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/046.mp3">
+                        الأحقاف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/047.mp3">
+                        محمد
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/048.mp3">
+                        الفتح
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/049.mp3">
+                        الحجرات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/050.mp3">
+                        ق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/051.mp3">
+                        الذاريات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/052.mp3">
+                        الطور
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/053.mp3">
+                        النجم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/054.mp3">
+                        القمر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/055.mp3">
+                        الرحمن
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/056.mp3">
+                        الواقعة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/057.mp3">
+                        الحديد
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/058.mp3">
+                        المجادلة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/059.mp3">
+                        الحشر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/060.mp3">
+                        الممتحنة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/061.mp3">
+                        الصف
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/062.mp3">
+                        الجمعة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/063.mp3">
+                        المنافقون
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/064.mp3">
+                        التغابن
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/065.mp3">
+                        الطلاق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/066.mp3">
+                        التحريم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/067.mp3">
+                        الملك
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/068.mp3">
+                        القلم
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/069.mp3">
+                        الحاقة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/070.mp3">
+                        المعارج
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/071.mp3">
+                        نوح
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/072.mp3">
+                        الجن
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/073.mp3">
+                        المزمل
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/074.mp3">
+                        المدثر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/075.mp3">
+                        القيامة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/076.mp3">
+                        الإنسان
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/077.mp3">
+                        المرسلات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/078.mp3">
+                        النبأ
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/079.mp3">
+                        النازعات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/080.mp3">
+                        عبس
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/081.mp3">
+                        التكوير
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/082.mp3">
+                        الإنفطار
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/083.mp3">
+                        المطففين
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/084.mp3">
+                        الإنشقاق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/085.mp3">
+                        البروج
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/086.mp3">
+                        الطارق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/087.mp3">
+                        الأعلى
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/088.mp3">
+                        الغاشية
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/089.mp3">
+                        الفجر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/090.mp3">
+                        البلد
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/091.mp3">
+                        الشمس
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/092.mp3">
+                        الليل
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/093.mp3">
+                        الضحى
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/094.mp3">
+                        الشرح
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/095.mp3">
+                        التين
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/096.mp3">
+                        العلق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/097.mp3">
+                        القدر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/098.mp3">
+                        البينة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/099.mp3">
+                        الزلزلة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/100.mp3">
+                        العاديات
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/101.mp3">
+                        القارعة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/102.mp3">
+                        التكاثر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/103.mp3">
+                        العصر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/104.mp3">
+                        الهمزة
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/105.mp3">
+                        الفيل
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/106.mp3">
+                        قريش
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/107.mp3">
+                        الماعون
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/108.mp3">
+                        الكوثر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/109.mp3">
+                        الكافرون
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/110.mp3">
+                        النصر
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/111.mp3">
+                        المسد
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/112.mp3">
+                        الإخلاص
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/113.mp3">
+                        الفلق
+                    </option>
+                    <option value="https://server6.mp3quran.net/akdr/114.mp3">
+                        الناس
+                    </option></select>
+                </div>
+            </div>
+
+            <!-- Conteneur pour l'audio -->
+            <div class="audio-container">
+        <div class="audio-wrapper">
+            <audio id="chooseAudio" controls="">
+                <source src="https://server6.mp3quran.net/akdr/001.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="download-btn" onclick="downloadAudio('https://server6.mp3quran.net/akdr/001.mp3', 'الفاتحة')">
+                <i class="fas fa-download"></i> تحميل
+            </button>
+        </div>
+    </div>
+            <div id="surahListContainer"></div>
+        </section>
+    </main>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAAUfLRSIk81PI-s5luD0LvzCylHgGwuts",
+          authDomain: "dikra-01.firebaseapp.com",
+          projectId: "dikra-01",
+          storageBucket: "dikra-01.firebasestorage.app",
+          messagingSenderId: "360292273048",
+          appId: "1:360292273048:web:54f7bc77634bb41595f9ed",
+          measurementId: "G-FB4TJEGSZ6"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <script src="script.js?v=1.0.3"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker enregistré');
+                    })
+                    .catch(error => {
+                        console.log('Erreur d\'enregistrement du ServiceWorker:', error);
+                    });
+            });
+        }
+    </script>
+    <style>
+        .audio-player {
+            width: 300px;
+            margin: 20px auto;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .player-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .play-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .play-button .play-icon {
+            font-size: 20px;
+        }
+
+        .player-controls {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .time-display {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .progress-container {
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background-color: #ddd;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .progress {
+            width: 0;
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .progress-handle {
+            width: 10px;
+            height: 10px;
+            background-color: #007bff;
+            border-radius: 50%;
+            position: absolute;
+            top: -2.5px;
+            left: 0;
+            cursor: pointer;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .volume-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .volume-slider-container {
+            width: 100px;
+        }
+
+        .volume-slider {
+            width: 100%;
+        }
+
+        .audio-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Personnalisation des contrôles audio */
+        audio {
+            width: 100%;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        /* Style pour Webkit (Chrome, Safari) */
+        audio::-webkit-media-controls-panel {
+            background-color: #f3f3f3;
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #333;
+        }
+
+        /* Style pour Firefox */
+        audio::-moz-media-controls-panel {
+            background-color: #f3f3f3;
+        }
+    </style>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">
+                تم تطويره بواسطة 
+                <span class="developer-name">وحيد صمراني</span>
+                <span class="year">© 2024</span>
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/SamraniOuahid" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ouahid-samrani-1a104b231/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اقرأ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp2599594.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title" style="font-family: 'Awami Nastaliq'; font-size: 40px; font-weight: bold;">اقرأ</h1>
+        <p class="subtitle" style="font-family: 'AlBattar';">منْ أنِس بالقُرآن لمْ تضَرٌه وحشَة</p>
+    </header>
+    
+    <div class="icons">
+        <button id="showSurahs" style="font-family: 'UKIJ Merdane';">اسم السورة</button>
+        <button id="showReciters" style="font-family: 'UKIJ Merdane';">اسم القارئ</button>
+    </div>
+    
+    <div id="surahList" class="list hidden">
+        <input type="text" id="searchSurah" placeholder="بحث">
+        <div class="grid-container" style="font-family: 'خط الثلث';">
+            <ul>
+                <li>الفاتحة</li>
+                <li>البقرة</li>
+                <li>آل عمران</li>
+                <li>النساء</li>
+                <li>المائدة</li>
+                <li>الأنعام</li>
+                <li>الأعراف</li>
+                <li>الأنفال</li>
+                <li>التوبة</li>
+                <li>يونس</li>
+                <li>هود</li>
+                <li>يوسف</li>
+                <li>الرعد</li>
+                <li>إبراهيم</li>
+                <li>الحجر</li>
+                <li>النحل</li>
+                <li>الإسراء</li>
+                <li>الكهف</li>
+                <li>مريم</li>
+                <li>طه</li>
+                <li>الأنبياء</li>
+                <li>الحج</li>
+                <li>المؤمنون</li>
+                <li>النور</li>
+                <li>الفرقان</li>
+                <li>الشعراء</li>
+                <li>النمل</li>
+                <li>القصص</li>
+                <li>العنكبوت</li>
+                <li>الروم</li>
+                <li>لقمان</li>
+                <li>السجدة</li>
+                <li>الأحزاب</li>
+                <li>سبأ</li>
+                <li>فاطر</li>
+                <li>يس</li>
+                <li>الصافات</li>
+                <li>ص</li>
+                <li>الزمر</li>
+                <li>غافر</li>
+                <li>فصلت</li>
+                <li>الشورى</li>
+                <li>الزخرف</li>
+                <li>الدخان</li>
+                <li>الجاثية</li>
+                <li>الأحقاف</li>
+                <li>محمد</li>
+                <li>الفتح</li>
+                <li>الحجرات</li>
+                <li>ق</li>
+                <li>الذاريات</li>
+                <li>الطور</li>
+                <li>النجم</li>
+                <li>القمر</li>
+                <li>الرحمن</li>
+                <li>الواقعة</li>
+                <li>الحديد</li>
+                <li>المجادلة</li>
+                <li>الحشر</li>
+                <li>الممتحنة</li>
+                <li>الصف</li>
+                <li>الجمعة</li>
+                <li>المنافقون</li>
+                <li>التغابن</li>
+                <li>الطلاق</li>
+                <li>التحريم</li>
+                <li>الملك</li>
+                <li>القلم</li>
+                <li>الحاقة</li>
+                <li>المعارج</li>
+                <li>نوح</li>
+                <li>الجن</li>
+                <li>المزمل</li>
+                <li>المدثر</li>
+                <li>القيامة</li>
+                <li>الإنسان</li>
+                <li>المرسلات</li>
+                <li>النبأ</li>
+                <li>النازعات</li>
+                <li>عبس</li>
+                <li>التكوير</li>
+                <li>الانفطار</li>
+                <li>المطففين</li>
+                <li>الانشقاق</li>
+                <li>البروج</li>
+                <li>الطارق</li>
+                <li>الأعلى</li>
+                <li>الغاشية</li>
+                <li>الفجر</li>
+                <li>البلد</li>
+                <li>الشمس</li>
+                <li>الليل</li>
+                <li>الضحى</li>
+                <li>الشرح</li>
+                <li>التين</li>
+                <li>العلق</li>
+                <li>القدر</li>
+                <li>البينة</li>
+                <li>الزلزلة</li>
+                <li>العاديات</li>
+                <li>القارعة</li>
+                <li>التكاثر</li>
+                <li>العصر</li>
+                <li>الهمزة</li>
+                <li>الفيل</li>
+                <li>قريش</li>
+                <li>الماعون</li>
+                <li>الكوثر</li>
+                <li>الكافرون</li>
+                <li>النصر</li>
+                <li>المسد</li>
+                <li>الإخلاص</li>
+                <li>الفلق</li>
+                <li>الناس</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="battery-time">
+        <span id="batteryLevel">🔋</span>
+        <span id="currentTime"></span>
+    </div>
+    
+    <footer>
+        <p>بِقَلم: BENDADA Khadija</p>
+    </footer>
+</body>
+</html>
